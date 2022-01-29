@@ -1,0 +1,301 @@
+*{
+    margin: 0%;
+    box-sizing: border-box;
+}
+body{
+    background: url("./images/bg-pattern.svg") hsl(230, 100%, 99%);
+    font-family: 'Manrope', sans-serif;
+    height: 100vh;
+    width: 100vw;
+    background-size: cover;
+    background-position: 20% -40vh;
+    background-repeat: no-repeat;
+    padding: 110px 0px;
+}
+section.container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    text-align: center;
+}
+.heading-wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    height: 150px;
+    padding: 30px;
+    background: url("./images/pattern-circles.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: cover;
+}
+.heading-wrapper h1{
+    color: hsl(227, 35%, 25%);
+    font-weight: 800;
+    font-size: 30px;
+    letter-spacing: 0px;
+}
+.heading-wrapper h3{
+    color: hsl(225, 20%, 60%);
+    font-size: 15px;
+}
+.wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    height: 395px;
+    width: min(540px, 90%);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
+    border-radius: 10px;
+    background-color: white;
+}
+.wrapper .top-wrapper{
+    display: flex;
+    align-items: center;
+    padding: 40px 46px;
+    width: 100%;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.top-wrapper .info{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+.info .views{
+    text-transform: capitalize;
+    color: hsl(225, 20%, 60%);
+    letter-spacing: 2px;
+    font-size: 14px;
+    font-weight: 800;;
+}
+.price-wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: hsl(225, 20%, 60%);
+    font-weight: 600;
+}
+.price-wrapper .price{
+    margin-right: 10px;
+    color: hsl(227, 35%, 25%);
+    font-size: 40px;
+    font-weight: 800;
+}
+
+.slider-wrapper{
+    width: 100%;
+    padding: 32px 0px;
+}
+.slider{
+    -webkit-appearance: none;
+    appearance: none;
+    height: 8px;
+    width: 100%;
+    background-color: hsl(224, 65%, 95%);
+    outline: none;
+    border-radius: 10px;
+}
+.slider::-webkit-slider-runnable-track{
+    -webkit-appearance: none;
+    appearance: none;
+    border: none;
+}
+.slider::-webkit-slider-thumb{
+    transition: background .2s ease;
+    -webkit-appearance: none;
+    appearance: none;
+    border-radius: 50%;
+    border: none;
+    height: 40px;
+    width: 40px;
+    background: url("./images/icon-slider.svg") hsl(174, 86%, 45%);
+    background-repeat: no-repeat;
+    background-size: 59%;
+    background-position: center;
+    cursor:grab;
+    box-shadow: 2px 15px 20px hsla(174, 100%, 63%, 0.521);
+}
+.slider::-webkit-slider-thumb:hover{
+    background-color: hsla(174, 86%, 45%, 0.685);
+}
+.slider::-webkit-slider-thumb:active{
+    background-color: hsl(174, 65%, 38%);
+    cursor: grabbing;
+}
+
+.billing{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: right;
+    color: hsl(225, 20%, 60%);
+    font-size: 12px;
+    font-weight: 600;
+    margin-top: 18px;
+}
+.billing span{
+    margin-right: 15px;
+}
+.billing .discount{
+    font-size: 10px;
+    color: hsl(15, 100%, 70%);
+    padding: 3px 5px;
+    font-weight: 900;
+    border-radius: 8px;
+    background-color: hsl(14, 92%, 95%);
+}
+.billing .discount::after{
+    content: "discount";
+}
+.toggle-container{
+    cursor: pointer;
+    margin-right: 15px;
+    height: 22px;
+    width: 40px;
+    background: hsl(223, 50%, 87%);
+    border-radius: 20px;
+    padding: 4px;
+}
+.toggle-container:hover{
+    background-color: hsl(174, 77%, 80%);
+}
+.toggle-container.on{
+    background-color: hsl(174, 86%, 45%);
+}
+.toggle-container .toggle-knob{
+    height: 14px;
+    width: 14px;
+    background-color: white;
+    border-radius: 50%;
+    transition: transform .5s ease;
+}
+.toggle-container.on .toggle-knob{
+    transform: translateX(18px);
+}
+
+
+.wrapper .bottom{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 45px;
+    height: 135px;
+    width: 100%;
+    border-top: 1px solid rgb(240, 240, 240);
+}
+.bottom .contents{
+    color: hsl(225, 20%, 60%);
+    font-weight: 600;
+    font-size: 13px;
+    height: 100%;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.contents img{
+    margin-left: 0px;
+    height: 10px;
+    margin-right: 10px;
+}
+.bottom button{
+    border: none;
+    padding: 12px 45px;
+    color: hsl(226, 100%, 87%);
+    font-size: 12px;
+    font-weight: 600;
+    border-radius: 50px;
+    background-color: hsl(227, 35%, 25%);
+    font-family: 'Manrope', sans-serif;
+    cursor: grab;
+}
+.bottom button:hover{
+    color: white;
+}
+
+.attribution{
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+@media screen and (max-width: 600px) {
+    body{
+        padding: 10px 0px;
+        background-position: 1% -50vh;
+        /* background-size: 100%; */
+    }
+    .heading-wrapper h1{
+        margin-bottom: 18px;
+        font-size: 23px;
+    }
+    .heading-wrapper h3{
+        width: 70%;
+        font-size: 15px;
+        font-weight: 600;
+    }
+
+    .top-wrapper .info{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 100px;
+    }
+
+    .slider{
+        transform: translateY(-70px);
+    }
+    .top-wrapper .price-wrapper{
+        transform: translateY(68px);
+    }
+    .price-wrapper .price{
+        font-size: 38px;
+    }
+
+    .wrapper .top-wrapper{
+        padding-left: 22px;
+        padding-right: 22px;
+    }
+    .billing span{
+        margin-right: 10px;
+        font-size: 14px;
+    }
+    .toggle-container{
+        margin-right: 12px;
+    }
+    .billing .discount{
+        padding: 2px 5px;
+        border-radius: 10px;
+        font-size: 12px;
+    }
+    .billing .discount::after{
+        content: "";
+    }
+    .billing .discount::before{
+        content: "-";
+    }
+    .wrapper{
+        height: 548px;
+        margin-bottom: 30px;
+    }
+    .wrapper .bottom{
+        padding-top: 10px;
+        justify-content: space-around;
+        height: 220px;
+        flex-direction: column;
+    }
+    .bottom .contents{
+        font-size: 14px;
+        align-items: center;
+        height: 100px;
+    }
+}
