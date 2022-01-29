@@ -98,14 +98,9 @@ section.container{
     appearance: none;
     height: 8px;
     width: 100%;
-    background-color: hsl(224, 65%, 95%);
     outline: none;
     border-radius: 10px;
-}
-.slider::-webkit-slider-runnable-track{
-    -webkit-appearance: none;
-    appearance: none;
-    border: none;
+    background: linear-gradient(90deg,hsl(174, 86%, 45%) 50%, hsl(224, 65%, 95%) -50%);
 }
 .slider::-webkit-slider-thumb{
     transition: background .2s ease;
@@ -129,6 +124,12 @@ section.container{
     background-color: hsl(174, 65%, 38%);
     cursor: grabbing;
 }
+/* .slider::-webkit-slider-runnable-track::before{
+    content: '';
+    height: 10px;
+    width: 200px;
+    background-color: red;
+} */
 
 .billing{
     display: flex;

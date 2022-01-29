@@ -20,6 +20,9 @@ document.querySelector('.slider').addEventListener("input", (e)=>{
         e.target.value = 24;
         price = 36;
     }
+    document.querySelector(".slider").style.background = `linear-gradient(90deg,hsl(174, 86%, 45%) ${((e.target.value-8)/16)*100}%, hsl(224, 65%, 95%) ${100-((e.target.value-8)/16)*100}%)`
+    console.log(e.target.value);
+    console.log(((e.target.value-8)/16)*100);
     document.querySelector('.view-count').innerHTML = `${views}`;
     document.querySelector('.price').innerHTML = `$${price*discount}.00`;
 })
