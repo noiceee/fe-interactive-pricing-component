@@ -145,7 +145,7 @@ section.container{
     margin-right: 15px;
 }
 @media screen and (max-width: 390px){
-    .billing-span{
+    .billing span{
         margin-right: 0px;
     }
 }
