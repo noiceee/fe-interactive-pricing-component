@@ -144,6 +144,11 @@ section.container{
 .billing span{
     margin-right: 15px;
 }
+@media screen and (max-width: 390px){
+    .billing-span{
+        margin-right: 0px;
+    }
+}
 .billing .discount{
     font-size: 10px;
     color: hsl(15, 100%, 70%);
